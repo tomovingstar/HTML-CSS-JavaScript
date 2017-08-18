@@ -1,0 +1,5 @@
+<p>Hello</p>
+<p>SP4 W10 05/05/2016</p>
+<p>Minor, one unit is affected</p>
+<p>Happened XX days ago; before that everything was fine</p>
+<p>The issue can be considered resolved and case closed once the Surface ...</p>

@@ -1,0 +1,190 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org" xml:lang="en" lang="en">
+<head>
+<title>EA100</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" media="screen,projection" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" media="screen,projection" type="text/css" href="css/main.css" />
+<link rel="stylesheet" media="screen,projection" type="text/css" href="css/2col.css" title="2col" />
+<link rel="alternate stylesheet" media="screen,projection" type="text/css" href="css/1col.css" title="1col" />
+<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+
+<!--[if lte IE 6]><link rel="stylesheet" media="screen,projection" type="text/css" href="css/main-ie6.css" /><![endif]-->
+<link rel="stylesheet" media="screen,projection" type="text/css" href="css/style.css" />
+<link rel="stylesheet" media="screen,projection" type="text/css" href="css/mystyle.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/switcher.js"></script>
+<script type="text/javascript" src="js/toggle.js"></script>
+<script type="text/javascript" src="js/ui.core.js"></script>
+<script type="text/javascript" src="js/ui.tabs.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".tabs > ul").tabs();
+	});
+	</script>
+</head>
+<body>
+<div id="main">
+  <!-- Tray -->
+  <div id="tray" class="box">
+  </div>
+  <!--  /tray -->
+  <hr class="noscreen" />
+  <!-- Menu -->
+  <div id="menu" class="box">
+    <ul class="box f-right">
+      <li><a href="index.html"><span><strong>EA100</strong></span></a></li>
+    </ul>
+    <ul class="box">
+      <li id="menu-active"><a href="HelpfulLinks.html"><span>Links</span></a></li>
+      <!-- Active -->
+      <li><a href="MS.html"><span>MS</span></a></li>
+      <li><a href="BS.html"><span>BS</span></a></li>
+      <li><a href="UD.html"><span>UD</span></a></li>
+      <li><a href="LI.html"><span>LI</span></a></li>
+      <li><a href="Var.html"><span>Var</span></a></li>
+      <li><a href="index.html"><span>MS...</span></a></li>
+    </ul>
+  </div>
+  <!-- /header -->
+  <hr class="noscreen" />
+  <!-- Columns -->
+  <div id="cols" class="box">
+    <!-- Aside (Left Column) -->
+    <div id="aside" class="box">
+      <div class="padding box">
+        <!-- Logo (Max. width = 200px) -->
+        <p id="logo"><a href="#"><img src="tmp/logo.gif" alt="" /></a></p>
+        <!-- Search -->
+        <form action="#" method="get" id="search">
+          <fieldset>
+          <legend>Search</legend>
+          <p>
+            <input type="text" size="17" name="" class="input-text" />
+            &nbsp;
+            <input type="submit" value="OK" class="input-submit-02" />
+            <br />
+            <a href="javascript:toggle('search-options');" class="ico-drop">Advanced search</a></p>
+          <!-- Advanced search -->
+          <div id="search-options" style="display:none;">
+            <p>
+              <label>
+              <input type="checkbox" name="" checked="checked" />
+              Option I.</label>
+              <br />
+              <label>
+              <input type="checkbox" name="" />
+              Option II.</label>
+              <br />
+              <label>
+              <input type="checkbox" name="" />
+              Option III.</label>
+            </p>
+          </div>
+          <!-- /search-options -->
+          </fieldset>
+        </form>
+      </div>
+      <!-- /padding -->
+      <ul class="box">
+        <li><a href="#Co">Con</a></li>
+        <li><a href="#BS">BS</a></li>
+        <li><a href="#Tr">Tr</a></li>
+        <li><a href="#Update">Update</a></li>
+        <li><a href="#History">History</a></li>
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li id="submenu-active"><a href="#">Active Page</a>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<li id="submenu-active"><a href="#">Active Page</a>
+        <!-- Active -->
+       </ul>
+    </div>
+    <!-- /aside -->
+    <hr class="noscreen" />
+    <!-- Content (Right Column) -->
+    <div id="content" class="box">
+      <h1>EA100 Electronic Agent</h1>
+	  
+      <h3 class="tit">Helpful Links</h3>
+         
+      
+	                 
+    </div>
+    <!-- /content -->
+  </div>
+  <!-- /cols -->
+  <hr class="noscreen" />
+  <!-- Footer -->
+  <div id="footer" class="box">
+    <p class="f-left">&copy; 2016 <a href="#">Your Company</a>, All Rights Reserved &reg;</p>
+    <p class="f-right">Webmaster <a href=#>MK</a></p>
+  </div>
+  <!-- /footer -->
+</div>
+
+<script src="js/clipboard.min.js"></script>
+   
+<script>
+    var clipboard = new Clipboard('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+</script>
+<script type='text/javascript'>
+
+function saveTextAsFile()
+{
+	var textToWrite = document.getElementById("inputTextToSave").value;
+	var textFileAsBlob = new Blob([textToWrite], {type:'text/plain'});
+	var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
+
+	var downloadLink = document.createElement("a");
+	downloadLink.download = fileNameToSaveAs;
+	downloadLink.innerHTML = "Download File";
+	if (window.webkitURL != null)
+	{
+		// Chrome allows the link to be clicked
+		// without actually adding it to the DOM.
+		downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+	}
+	else
+	{
+		// Firefox requires the link to be added to the DOM
+		// before it can be clicked.
+		downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+		downloadLink.onclick = destroyClickedElement;
+		downloadLink.style.display = "none";
+		document.body.appendChild(downloadLink);
+	}
+
+	downloadLink.click();
+}
+
+function destroyClickedElement(event)
+{
+	document.body.removeChild(event.target);
+}
+
+function loadFileAsText()
+{
+	var fileToLoad = document.getElementById("fileToLoad").files[0];
+
+	var fileReader = new FileReader();
+	fileReader.onload = function(fileLoadedEvent) 
+	{
+		var textFromFileLoaded = fileLoadedEvent.target.result;
+		document.getElementById("inputTextToSave").value = textFromFileLoaded;
+	};
+	fileReader.readAsText(fileToLoad, "UTF-8");
+}
+
+</script>
+
+</body>
+</html>

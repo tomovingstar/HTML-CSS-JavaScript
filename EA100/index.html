@@ -1,0 +1,473 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org" xml:lang="en" lang="en">
+<head>
+<title>EA100</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" media="screen,projection" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" media="screen,projection" type="text/css" href="css/main.css" />
+<link rel="stylesheet" media="screen,projection" type="text/css" href="css/2col.css" title="2col" />
+<link rel="alternate stylesheet" media="screen,projection" type="text/css" href="css/1col.css" title="1col" />
+<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+<link rel="stylesheet" media="screen,projection" type="text/css" href="css/style.css" />
+<link rel="stylesheet" media="screen,projection" type="text/css" href="css/mystyle.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/toggle.js"></script>
+<script type="text/javascript" src="js/ui.core.js"></script>
+<script type="text/javascript" src="js/ui.tabs.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+/*
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("#test").hide();
+    });
+    $("#show").click(function(){
+        $("#test").show();
+    });
+});
+*/
+</script>
+</head>
+<body>
+<div id="main">
+  <!-- Tray -->
+<!--tray-->
+  <div id="tray" class="box">
+<p id="dnt"></p> 
+<script>
+document.getElementById("dnt").innerHTML = Date() + "    Tel: xxx";
+</script>
+  </div>
+  <!--  /tray -->
+  <hr class="noscreen" />
+  <!-- Menu -->
+  <div id="menu" class="box">
+    <ul class="box f-right">
+      <li><a href="Index.html"><span><strong>EA100</strong></span></a></li>
+    </ul>
+    <ul class="box">
+      <li id="menu-active"><a href="HelpfulLinks.html"><span>Links</span></a></li>
+      <!-- Active -->
+      <li><a href="MS.html"><span>MS</span></a></li>
+      <li><a href="BS.html"><span>BS</span></a></li>
+      <li><a href="UD.html"><span>UD</span></a></li>
+      <li><a href="LI.html"><span>LI</span></a></li>
+      <li><a href="Var.html"><span>Var</span></a></li>
+      <li><a href="Index.html"><span>MS...</span></a></li>
+    </ul>
+  </div>
+  <!-- /header -->
+  <hr class="noscreen" />
+  <!-- Columns -->
+  <div id="cols" class="box">
+    <!-- Aside (Left Column) -->
+    <div id="aside" class="box">
+      <div class="padding box">
+        <!-- Logo (Max. width = 200px) -->
+        <p id="logo"><a href="#"><img src="tmp/logo.gif" alt="" /></a></p>
+        <!-- Search -->
+        <form action="#" method="get" id="search">
+          <fieldset>
+          <legend>Search</legend>
+          <p>
+            <input type="text" size="17" name="" class="input-text" />
+            &nbsp;
+            <input type="submit" value="OK" class="input-submit-02" />
+            <br />
+            <a href="javascript:toggle('search-options');" class="ico-drop">Advanced search</a></p>
+          <!-- Advanced search -->
+          <div id="search-options" style="display:none;">
+            <p>
+              <label>
+              <input type="checkbox" name="" checked="checked" />
+              Option I.</label>
+              <br />
+              <label>
+              <input type="checkbox" name="" />
+              Option II.</label>
+              <br />
+              <label>
+              <input type="checkbox" name="" />
+              Option III.</label>
+            </p>
+          </div>
+          <!-- /search-options -->
+          </fieldset>
+        </form>
+      </div>
+      <!-- /padding -->
+      <ul class="box">
+        <li><a href="#Scope">Scope</a></li>
+        <li><a href="#Troubleshooting">Troubleshooting</a></li>
+        <li><a href="#Solution">Solution</a></li>
+		<li><a href="#Unresponsive Customer">Unresponsive Customer</a></li>
+		<li><a href="#Escalation">Escalation</a></li>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<li id="submenu-active"><a href="#">Home</a>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<li id="submenu-active"><a href="#">Home</a>
+          <!-- Active -->
+       </ul>
+    </div>
+    <!-- /aside -->
+    <hr class="noscreen" />
+    <!-- Content (Right Column) -->
+    <div id="content" class="box">
+      <h1>Electronic Agent</h1>
+	  <!-- Tabs -->
+      <h3 class="tit">Questions To Ask</h3>
+
+      <div class="tabs box">
+        <ul>
+          <li><a href="#tab01"><span>Scoping Questions</span></a></li>
+          <li><a href="#tab02"><span>Boot Issues</span></a></li>
+          <li><a href="#tab03"><span>Other Issues</span></a></li>
+        </ul>
+      </div>
+      <!-- /tabs -->
+      <!-- Tab01 -->
+      <div id="tab01">
+
+<p>If you will, please answer the following questions to help scoping this problem (select those that apply). To capture a screenshot, click window of interest and press Alt-PrtScr. To paste screenshot to email click email body (after Reply All) and press Ctrl-V.</p>
+	<ul>
+	<li></li>
+	<li></li>
+	<li></li>
+    </ul>
+      </div>
+      <!-- /tab01 -->
+      <!-- Form -->
+      <h3 class="tit">Case Notes</h3>
+<!--
+<div id="test">If you click on the "Hide" button, I will disappear.</div>
+<form>
+  <input id="hide" type="radio" name="gender" value="Yes" checked> Male<br>
+  <input id="show" type="radio" name="gender" value="No"> Female<br>
+  <input type="radio" name="gender" value="Not sure"> Other
+</form>
+-->
+      <fieldset>
+      <legend>Notes</legend>
+      <table class="nostyle">
+        <tr>
+          <td style="width:70px;">Case</td>
+          <td><input id="inputFileNameToSaveAs" type="text" size="40" name="" class="filename" placeholder="File Name"/></td>
+        </tr>
+        <tr>
+          <td class="va-top">Notes:</td>
+          <td><textarea id="inputTextToSave" cols="80" rows="7" class="input-text" placeholder="Issue occured XX days ago"></textarea></td>
+        </tr>
+        <tr>
+          <td>Device:</td>
+		<!--  <form> -->
+          <td><label>
+	    <input type="radio" name="device" checked/>
+            SB </label> 
+	    &nbsp;
+	    <label>
+	    <input type="radio" name="device" checked/>
+            SP4 </label> 
+	    &nbsp;
+            <label>
+            <input type="radio" name="device"/>
+            SP3</label>
+            &nbsp;
+            <label>
+            <input type="radio" name="device"/>
+            S3</label>
+	    &nbsp;
+	    <label>
+	    <input type="radio" name="device"/>
+            SP2</label>
+	    &nbsp;
+	    <label>
+	    <input type="radio" name="device"/>
+            S2</label>
+	    &nbsp;
+	    <label>
+	    <input type="radio" name="device"/>
+            SP</label>
+	    &nbsp;
+	    <label>
+	    <input type="radio" name="device"/>
+            S</label>
+          </td>
+		<!--  </form> -->
+        </tr>
+        <tr>
+		<!-- <form> -->
+          <td>OS:</td>
+          <td><label>
+            <input type="radio" name="os" checked/>
+            W10</label>
+            &nbsp;
+            <label>
+            <input type="radio" name="os"/>
+            W8.1</label>
+            &nbsp;
+            <label>
+            <input type="radio" name="os"/>
+            W8.1 RT</label>
+          </td>
+		<!--  </form> -->
+        </tr>
+        <tr>
+		  <td></td>
+		  <td>File to Load:
+		  <input type="file" id="fileToLoad">
+		  <button onclick="loadFileAsText()">Load File</button>
+	</tr>
+	<tr>
+		  <td></td>
+		  <td><button class="btn" data-clipboard-action="copy" data-clipboard-target="#inputTextToSave">Copy</button>
+          	  <button onclick="saveTextAsFile()">Save</button> 		  
+        </tr>
+      </table>
+	  </fieldset>
+      <!-- System Messages -->
+      <h3 class="tit">Email Tempates</h3>
+	  <div class="msg warning">
+				<h4 id="Scope">Scope</h4>
+
+<form>
+<select id="Select5" onclick="Function()">
+  <option value="First Contact">First Contact</option>
+  <option value="Follow up with prescope questions">Follow up with prescope questions</option>
+  <option value="Verify scope agreement">Verify scope agreement</option>
+  <option value="Follow up with TSh questions">Follow up with TSh questions</option>
+  <option value="Further research customer issue">Further research customer issue</option>
+  <option value="Follow up with customer report">Follow up on customer report</option>
+  <option selected value="Email update">Email update</option>
+</select>
+
+<select id="Select2" onclick="Function()">
+  <option selected value="NA">NA</option>
+  <option value="Bug #">Bug #</option>
+</select>
+
+<select id="Select3" onclick="Function()">
+  <option selected value="Windows 7">Windows 7</option>
+  <option value="Windows 8">Windows 8</option>
+  <option value="Windows 8.1">Windows 8.1</option>
+  <option value="Windows 10">Windows 10</option>
+  <option value="Win Server 2008">Win Server 2008</option>
+  <option value="Win Server 2012">Win Server 2012</option>
+  <option value="Win Server 2016">Win Server 2016</option>
+</select>
+
+<input id="Select4" type="text" size="55" name="" class="filename" placeholder="Issue Description" onclick="Function()">
+</form>
+<br><br>
+<!--<input type="text" name="txt" onclick="Function(this.value)">-->
+
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#DropDowns">Copy</button><strong> The Title is:</strong><div id="DropDowns">
+</div><br>
+<form>
+<select id="SelectClosing5" onclick="FunctionClosing()">
+  <option value="First Contact">First Contact</option>
+  <option value="Follow up with prescope questions">Follow up with prescope questions</option>
+  <option value="Verify scope agreement">Verify scope agreement</option>
+  <option value="Follow up with TSh questions">Follow up with TSh questions</option>
+  <option value="Further research customer issue">Further research customer issue</option>
+  <option value="Follow up with customer report">Follow up on customer report</option>
+  <option selected value="Email update">Email update</option>
+</select>
+
+<select id="SelectClosing2" onclick="FunctionClosing()">
+  <option selected value="NA">NA</option>
+  <option value="Bug #">Bug #</option>
+</select>
+
+<select id="SelectClosing3" onclick="FunctionClosing()">
+  <option selected value="Windows 7">Windows 7</option>
+  <option value="Windows 8">Windows 8</option>
+  <option value="Windows 8.1">Windows 8.1</option>
+  <option value="Windows 10">Windows 10</option>
+  <option value="Win Server 2008">Win Server 2008</option>
+  <option value="Win Server 2012">Win Server 2012</option>
+  <option value="Win Server 2016">Win Server 2016</option>
+</select>
+</form>
+<!--
+<input id="SelectClosing4" type="text" size="55" name="" class="filename" placeholder="Issue Description" onclick="FunctionClosing()" />
+
+<select id="SelectClosing4" onclick="FunctionClosing()">
+  <option selected value="NO STRIKE">NO STRIKE
+  <option value="STRIKE 1">STRIKE 1
+  <option value="STRIKE 2">STRIKE 2
+  <option value="STRIKE 3">STRIKE 3
+</select>
+-->
+<br><br>
+<!--<input type="text" name="txt" onclick="Function(this.value)">-->
+
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#DropDownsClosing">Copy</button><strong> ClosingTitle</strong><div id="DropDownsClosing">
+</div><br>
+
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#s1">Copy</button><strong> Item1</strong><div id="s1">
+<!--s1-->
+Something to copy
+				</div>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#s1a">Copy</button><strong> Item 2</strong><div id="s1a">
+<!--s1a-->
+Something to copy
+				</div>
+</div>
+
+	  <div class="msg info">
+				<h4 id="Troubleshooting">Troubleshooting</h4>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#t0">Copy</button><strong> Item 1</strong><div id="t0">
+<!--t0-->
+Something to copy
+				</div>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#t10d">Copy</button><strong> Item 2</strong><div id="t10d"> 
+<!--t10d-->
+Something to copy
+				</div>
+	  </div>
+	  <div class="msg done">
+	            <h4 id="Solution">Solution</h4>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#l1">Copy</button><strong> Item 1</strong><div id="l1">
+<!--l1-->
+Something to copy
+				</div>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#l2">Copy</button><strong> Item 2</strong><div id="l2">
+<!--l2-->
+Something to copy
+				</div>
+	  </div>
+	  <div class="msg error">
+	            <h4 id="Communication">Communication</h4>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#e0">Copy</button><strong> Item 1</strong><div id="e0">
+<!--e0-->
+Something to copy
+				</div>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#e00">Copy</button><strong> Item 2</strong><div id="e00">
+<!--e00-->
+Something to copy
+				</div>
+	  </div>
+	  <div class="msg warning">
+				<h4 id="Unresponsive Customer">Unresponsive Customer</h4>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#u1">Copy</button><strong> Item 1</strong><div id="u1">
+<!--u1-->
+Something to copy
+				</div>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#u2">Copy</button><strong> Item 2</strong><div id="u2">
+<!--u2-->
+Something to copy
+				</div>
+	</div>
+<div class="msg info">
+				<h4 id="Escalation">Escalation</h4>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#c1">Copy</button><strong> Item 1</strong><div id="c1">
+<!--c1-->
+Something to copy
+				</div>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#c2">Copy</button><strong> Item 2</strong><div id="c2">
+<!--c2-->
+Something to copy
+				</div>
+	  </div>
+    
+    <!-- /content -->
+  </div>
+  <!-- /cols -->
+  <hr class="noscreen" />
+  <!-- Footer -->
+  <div id="footer" class="box">
+    <p class="f-left">&copy; 2016 <a href="#">Your Company</a>, All Rights Reserved &reg;</p>
+    <p class="f-right">Webmaster <a href=#>MK</a></p>
+  </div>
+  <!-- /footer -->
+</div>
+
+<script src="js/clipboard.min.js"></script>
+   
+<script>
+    var clipboard = new Clipboard('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+</script>
+<script type='text/javascript'>
+
+/*function saveTextAsFile()
+{
+	var textToWrite = document.getElementById("inputTextToSave").value;
+	var textFileAsBlob = new Blob([textToWrite], {type:'text/plain'});
+	var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
+
+	var downloadLink = document.createElement("a");
+	downloadLink.download = fileNameToSaveAs;
+	downloadLink.innerHTML = "Download File";
+	if (window.webkitURL != null)
+	{
+		// Chrome allows the link to be clicked
+		// without actually adding it to the DOM.
+		downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+	}
+	else
+	{
+		// Firefox requires the link to be added to the DOM
+		// before it can be clicked.
+		downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+		downloadLink.onclick = destroyClickedElement;
+		downloadLink.style.display = "none";
+		document.body.appendChild(downloadLink);
+	}
+
+	downloadLink.click();
+}
+
+function destroyClickedElement(event)
+{
+	document.body.removeChild(event.target);
+}
+
+function loadFileAsText()
+{
+	var fileToLoad = document.getElementById("fileToLoad").files[0];
+
+	var fileReader = new FileReader();
+	fileReader.onload = function(fileLoadedEvent) 
+	{
+		var textFromFileLoaded = fileLoadedEvent.target.result;
+		document.getElementById("inputTextToSave").value = textFromFileLoaded;
+	};
+	fileReader.readAsText(fileToLoad, "UTF-8");
+}
+*/
+</script>
+<script>
+function Function(val) {
+//var x1=document.getElementById("Select1").value;
+var x2=document.getElementById("Select2").value;
+var x3=document.getElementById("Select3").value;
+var x4=document.getElementById("Select4").value;
+var x5=document.getElementById("Select5").value;
+var d = new Date();
+//document.getElementById("DropDowns").innerHTML ="NC: " + ("0" + (d.getMonth()+1)).slice(-2)+"/"+d.getDate()+"/"+d.getFullYear()+" | "+x5+" | "+d.getMonth()+"/"+d.getDate()+"/"+d.getFullYear()+" | "+x1+" | "+x2+" | "+val+" | "+x3+" | "+x4;
+document.getElementById("DropDowns").innerHTML ="NC: " + ("0" + (d.getMonth()+1)).slice(-2)+"/"+("0" + (7+d.getDate())).slice(-2)+"/"+("0" + (d.getFullYear())).slice(-2)+ " | " + x5 + " | LC: "+("0" + (d.getMonth()+1)).slice(-2)+"/"+("0" + (d.getDate())).slice(-2)+"/"+("0" + (d.getFullYear())).slice(-2)+ " | " + x2 + " | " + x3 + " | " + x4;
+}
+</script>
+<script>
+function FunctionClosing(val) {
+//var x1=document.getElementById("SelectClosing1").value;
+var x2=document.getElementById("SelectClosing2").value;
+var x3=document.getElementById("SelectClosing3").value;
+//var x4=document.getElementById("SelectClosing4").value;
+//var x5=document.getElementById("SelectClosing5").value;
+var d = new Date();
+//document.getElementById("DropDowns").innerHTML ="NC: " + ("0" + (d.getMonth()+1)).slice(-2)+"/"+d.getDate()+"/"+d.getFullYear()+" | "+x5+" | "+d.getMonth()+"/"+d.getDate()+"/"+d.getFullYear()+" | "+x1+" | "+x2+" | "+val+" | "+x3+" | "+x4;
+document.getElementById("DropDownsClosing").innerHTML = " | " + " | " + " | " + x2 + " | " + x3 + " | ";
+}
+</script>
+
+</body>
+</html>
